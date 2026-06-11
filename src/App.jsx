@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+// ─── Sidebar ─────────────────────────────────────────────────────────────import { useState, useEffect, useMemo } from "react";
 
 const COLORS = [
   "#ef4444","#f97316","#f59e0b","#eab308","#84cc16","#22c55e",
@@ -163,8 +163,7 @@ function cancelReminder() {
   const id = parseInt(localStorage.getItem("ritual-reminder-timeout") || "0");
   if (id) { clearTimeout(id); localStorage.removeItem("ritual-reminder-timeout"); }
 }
-
-// ─── Sidebar ───────────────────────────────────────────────────────────────
+──
 
 function Sidebar({ active, setActive, dark, setDark, t }) {
   const nav = [
